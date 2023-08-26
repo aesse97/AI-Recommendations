@@ -12,7 +12,7 @@ import TvIcon from '@mui/icons-material/Tv';
 import '../App.css';
 import { useTheme } from '@mui/material/styles';
 import LoadingText from './LoadingText';
-import { WelcomeMessages } from './loadingtext';
+import { WelcomeMessages } from './LoadingText';
 import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded';
 import Brightness2Icon from '@mui/icons-material/Brightness2';
 import './RecommendationForm.css'
