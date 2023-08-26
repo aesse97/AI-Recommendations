@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "humble-mammal-patient.ngrok-free.app", "ai-recommendations-679d4f8be406.herokuapp.com"]
+ALLOWED_HOSTS = ["localhost", "humble-mammal-patient.ngrok-free.app", "ai-recommendations-679d4f8be406.herokuapp.com", "irecommender.com"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -91,11 +91,13 @@ CSRF_COOKIE_PATH = '/'
 CSRF_COOKIE_HTTPONLY = False
 CSRF_TRUSTED_ORIGINS = [
     "https://humble-mammal-patient.ngrok-free.app",
-    "https://ai-recommendations-679d4f8be406.herokuapp.com"
+    "https://ai-recommendations-679d4f8be406.herokuapp.com",
+    "https://irecommender.com"
 ]
 CORS_ORIGIN_WHITELIST = [
     "https://humble-mammal-patient.ngrok-free.app",
-    "https://ai-recommendations-679d4f8be406.herokuapp.com"
+    "https://ai-recommendations-679d4f8be406.herokuapp.com",
+    "https://irecommender.com"
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
