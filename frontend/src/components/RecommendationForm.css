@@ -1,0 +1,145 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 2rem;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.dark-background {
+    background: linear-gradient(45deg, #1e1e2f, #1a1a25);
+}
+
+.light-background {
+    background: linear-gradient(135deg, #eaf0fa, #f5f7fa);
+}
+
+.dark-content {
+    background: linear-gradient(45deg, #2e2e45, #1b1b30);
+}
+
+.light-content {
+    background: linear-gradient(135deg, #d9e2f3, #e6eaf8);
+}
+
+.main-container .toggle-theme-btn {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+.welcome-message-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.welcome-message-text {
+    font-size: 30px;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+    color: #333;
+}
+
+.loading-or-content-box {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container {
+    border-radius: 3px;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.content-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.15);
+}
+
+.submit-btn {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+}
+
+.content-container {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+Button {
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+Button:hover {
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+.flex-spacer {
+    flex: 1;
+}
+
+.loading-text-box {
+    position: absolute;
+    top: 40%;
+}
+
+.loading-text-message {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.dark {
+    background: linear-gradient(45deg, #2e2e45, #1b1b30);
+}
+
+.light {
+    background: linear-gradient(135deg, #d9e2f3, #e6eaf8);
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+        padding: 1rem;
+    }
+
+    .welcome-message-text {
+        font-size: 12px;
+        margin-bottom: 1.5rem;
+    }
+
+    .content-container {
+        padding: 1.5rem;
+    }
+
+    .welcome-message-box {
+        font-size: 12px;
+    }
+    .loading-text-message {
+    font-size: 12px;
+    }
+}
