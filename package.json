@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A Django + React app",
   "scripts": {
-    "heroku-postbuild": "cd Frontend && npm install && npm run build"
+    "heroku-postbuild": "cd frontend && npm install && npm run build"
   },
   "engines": {
     "node": "14.x",
