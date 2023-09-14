@@ -134,7 +134,6 @@ return (
                       <Container style={{ boxShadow: theme.shadows[10] }} className={`content-container ${themeName === 'dark' ? 'dark-content' : 'light-content'}`}>
                         <form onSubmit={handleSubmit}>
                             <motion.div initial={{y: -50}} animate={{y: 0}} transition={{type: 'spring', stiffness: 150}}>
-                                {/* This section is kept empty as you commented out the header */}
                             </motion.div>
                             <FormControl fullWidth variant="outlined" margin="normal">
                                 <InputLabel id="category-label">Category</InputLabel>

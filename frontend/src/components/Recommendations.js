@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
-import { Button, Box, Typography, Card, CardActionArea, CardMedia, CardContent } from '@mui/material'; // Import Button
+import { Button, Box, Typography, Card, CardActionArea, CardMedia, CardContent } from '@mui/material';
 import RecommendationContext from './RecommendationContext';
-import { ThemeContext } from './theme'; // Import ThemeContext
+import { ThemeContext } from './theme';
 import './Recommendations.css';
 import { useTheme } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
@@ -27,7 +27,7 @@ function getCookie(name) {
 }
 
 function Recommendations() {
-  const [{ themeName, toggleTheme }] = useContext(ThemeContext); // Access theme context
+  const [{ themeName, toggleTheme }] = useContext(ThemeContext);
   const theme = useTheme();
   const [sortPreference, setSortPreference] = useState('alphabetical');
   const [sortOrder, setSortOrder] = useState('ascending');

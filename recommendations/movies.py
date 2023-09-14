@@ -13,7 +13,6 @@ def get_movie_details(movie_name):
         movie = data['results'][0]
         movie_id = movie['id']
 
-        # Fetch watch providers
         providers_url = f"{TMDB_BASE_URL}/movie/{movie_id}/watch/providers?api_key={TMDB_API_KEY}"
         providers_response = requests.get(providers_url)
         providers_data = providers_response.json()
@@ -25,13 +24,13 @@ def get_movie_details(movie_name):
         providers_list = [{
             'name': provider['provider_id'],
             'logo': f"https://image.tmdb.org/t/p/original{provider['logo_path']}" if provider['logo_path'] else None,
-            'url': provider.get('link', '')  # Extract the streaming link
+            'url': provider.get('link', '')
         } for provider in flatrate_providers]
 
         rating_percentage = round(movie['vote_average'] * 10)
 
         return {
-            'id': movie_id,  # Added this line
+            'id': movie_id,
             'title': movie['title'],
             'poster_path': f"https://image.tmdb.org/t/p/w500{movie['poster_path']}",
             'release_date': movie['release_date'],
@@ -51,7 +50,6 @@ def get_tv_show_details(tv_show_name):
         tv_show = data['results'][0]
         tv_show_id = tv_show['id']
 
-        # Fetch watch providers
         providers_url = f"{TMDB_BASE_URL}/tv/{tv_show_id}/watch/providers?api_key={TMDB_API_KEY}"
         providers_response = requests.get(providers_url)
         providers_data = providers_response.json()

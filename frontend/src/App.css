@@ -183,17 +183,17 @@ main {
 
 @media (max-width: 768px) {
   .section {
-    margin-top: 2em; /* Reduce top margin */
+    margin-top: 2em;
   }
   .container {
-    padding: 2em; /* Reduce container padding */
+    padding: 2em;
   }
   h3 {
-    font-size: 1.5rem; /* Reduce title font size */
+    font-size: 1.5rem;
   }
   .btn {
-    font-size: 0.8rem; /* Reduce button font size */
-    padding: 0.6em 1em; /* Reduce button padding */
+    font-size: 0.8rem;
+    padding: 0.6em 1em;
   }
   .welcome-message-text, .welcome-message-text-motion {
         font-size: 20px;
@@ -241,8 +241,6 @@ main {
     transition: background-color 0.3s;
 }
 
-/* Light Theme Styling */
-
 .light .form-container {
     background-color: #f7f7f7;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
@@ -256,8 +254,6 @@ main {
 .light .form-inner-container {
     background-color: #ffffff;
 }
-
-/* Dark Theme Styling */
 
 .dark .form-container {
     background-color: #0b0b15;

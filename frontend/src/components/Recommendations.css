@@ -1,11 +1,11 @@
 body, #root {
-    background-color: var(--bg-color); /* or directly set to the dark color if not using variables */
+    background-color: var(--bg-color);
     height: 100%;
     margin: 0;
     padding: 0;
 }
 .main-container {
-    padding-top: 50px;  /* Adjust as needed */
+    padding-top: 50px;
 }
 
 .recommendations-container .recommendations-h2 {
@@ -16,13 +16,13 @@ body, #root {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 100%; /* Make sure the container spans the full width */
+    width: 100%;
 }
 
 .recommendation-section {
     width: 30%;
     margin: 10px;
-    background-color: var(--bg-color); /* Placeholder for background color */
+    background-color: var(--bg-color);
     padding: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -36,7 +36,7 @@ body, #root {
 
 .recommendation-item a {
     text-decoration: none;
-    color: var(--text-color); /* Placeholder for text color */
+    color: var(--text-color);
     margin-right: 10px;
 }
 
@@ -91,14 +91,14 @@ img {
     margin-top: 20px;
 }
 .provider-logo {
-    width: 40px; /* Increase the width */
-    height: 40px; /* Increase the height */
+    width: 40px;
+    height: 40px;
 }
 .music-recommendations-container {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    justify-content: center;  /* Centers the cards horizontally */
+    justify-content: center;
 }
 
 .music-card {
@@ -128,10 +128,10 @@ img {
 }
 
 .music-image-container {
-    flex: 1;  /* Takes up available space and pushes text container to the bottom */
+    flex: 1;
     display: flex;
-    align-items: center;  /* Centers image vertically */
-    justify-content: center;  /* Centers image horizontally */
+    align-items: center;
+    justify-content: center;
     padding-top: 40px;
     flex-grow: 0;
 }
@@ -176,8 +176,8 @@ img {
 }
 
 .book-image {
-    width: 150px; /* adjusted for typical book cover dimensions */
-    height: auto; /* to maintain aspect ratio */
+    width: 150px;
+    height: auto;
     border-radius: 8px;
 }
 
@@ -187,14 +187,14 @@ img {
     flex-direction: column;
     gap: 10px;
 }
-@media (max-width: 768px) {  /* This breakpoint can be adjusted based on when your layout starts looking off */
+@media (max-width: 768px) {
     .music-card {
-        width: 150px;  /* Reduce width for mobile */
-        height: 300px; /* Adjust height if necessary */
+        width: 150px;
+        height: 300px;
     }
 
     .music-recommendations-container {
-        padding: 0 10px;  /* Add some side padding to prevent cards from touching the screen edges */
+        padding: 0 10px;
     }
 
     .recommendations-container {
@@ -227,10 +227,10 @@ img {
     }
 
     .toggle-theme-btn {
-    position: absolute; /* If it's absolute or fixed */
+    position: absolute;
     top: 10px;
     right: 10px;
-    z-index: 1000; /* Ensure it's on top */
+    z-index: 1000;
     }
 
     .music-image-container {

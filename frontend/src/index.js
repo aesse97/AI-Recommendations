@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ThemeProvider } from './components/theme'; // Make sure to import ThemeProvider
+import { ThemeProvider } from './components/theme';
 import App from './App';
 import './index.css'
 import './App.css'
